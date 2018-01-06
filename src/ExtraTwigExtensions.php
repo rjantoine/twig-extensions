@@ -10,8 +10,6 @@
 
 namespace rjantoine\twigextensions;
 
-use rjantoine\twigextensions\twigextensions\TwigExtensionsTwigExtension;
-
 use Craft;
 use craft\base\Plugin;
 use craft\services\Plugins;
@@ -24,7 +22,7 @@ use yii\base\Event;
  * @package   TwigExtensions
  * @since     1.0.0
  */
-class TwigExtensions extends Plugin
+class ExtraTwigExtensions extends Plugin
 {
     // Static Properties
     // =========================================================================
@@ -56,11 +54,11 @@ class TwigExtensions extends Plugin
 		parent::init();
 		self::$plugin = $this;
 
-		Craft::$app->view->registerTwigExtension(new TwigExtensionsTwigExtension());
-		Craft::$app->view->registerTwigExtension(new Twig_Extensions_Extension_Text());
-		Craft::$app->view->registerTwigExtension(new Twig_Extensions_Extension_I18n());
-		Craft::$app->view->registerTwigExtension(new Twig_Extensions_Extension_Array());
-		Craft::$app->view->registerTwigExtension(new Twig_Extensions_Extension_Date());
+		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\ArrayExtension());
+		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\IntlExtension());
+		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\DateExtension());
+		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\I18nExtension());
+		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\TextExtension());
 	}
 
 }

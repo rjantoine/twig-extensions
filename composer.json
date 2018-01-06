@@ -31,12 +31,12 @@
         }
     },
     "extra": {
-        "name": "Twig Extensions",
+        "name": "Extra Twig Extensions",
         "handle": "twig-extensions",
         "schemaVersion": "1.0.0",
         "hasCpSettings": false,
         "hasCpSection": false,
         "changelogUrl": "https://raw.githubusercontent.com/rjantoine/twig-extensions/master/CHANGELOG.md",
-        "class": "rjantoine\\twigextensions\\TwigExtensions"
+        "class": "rjantoine\\twigextensions\\ExtraTwigExtensions"
     }
 }
