@@ -1,0 +1,42 @@
+{
+    "name": "rjantoine/twig-extensions",
+    "description": "Adds the extra filters and functions from Twig Extensions (http://twig-extensions.readthedocs.io/en/latest/)",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "twig extensions"
+    ],
+    "support": {
+        "docs": "https://github.com/rjantoine/twig-extensions/blob/master/README.md",
+        "issues": "https://github.com/rjantoine/twig-extensions/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Robert Antoine",
+            "homepage": "https://musingmonkeys.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "twig/extensions": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+          "rjantoine\\twigextensions\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Twig Extensions",
+        "handle": "twig-extensions",
+        "schemaVersion": "1.0.0",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/rjantoine/twig-extensions/master/CHANGELOG.md",
+        "class": "rjantoine\\twigextensions\\TwigExtensions"
+    }
+}
