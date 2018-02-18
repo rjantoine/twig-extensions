@@ -55,7 +55,7 @@ class ExtraTwigExtensions extends Plugin
 		self::$plugin = $this;
 
 		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\ArrayExtension());
-		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\IntlExtension());
+//		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\IntlExtension());
 		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\DateExtension());
 		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\I18nExtension());
 		Craft::$app->getView()->getTwig()->addExtension(new \Twig\Extensions\TextExtension());
